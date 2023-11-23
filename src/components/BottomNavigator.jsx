@@ -8,7 +8,7 @@ const BottomNavigator = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <VStack width={"100%"} p={"28px"} style={{ position: "absolute", bottom: 0 }}>
+    <VStack width={"100%"} p={"28px"} style={{ position: "absolute", bottom: 0, right: 0 }}>
       {isOpen && showMenu ? (
         <ChatList />
       ) : null}
